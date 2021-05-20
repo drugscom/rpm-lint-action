@@ -1,4 +1,4 @@
-FROM docker.io/library/centos:7
+FROM docker.io/library/centos:8
 
 LABEL 'com.github.actions.name'='Lint RPM specs'
 LABEL 'com.github.actions.description'='Lint RPM spec files'
