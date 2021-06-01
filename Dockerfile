@@ -8,6 +8,7 @@ RUN yum -y install \
     rpmlint-1.5 \
     && yum -y clean all
 
-ENTRYPOINT [ "/usr/bin/rpmlint" ]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
 
 WORKDIR /app
