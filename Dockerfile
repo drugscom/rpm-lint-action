@@ -1,4 +1,4 @@
-FROM centos:7.9.2009
+FROM centos:8.4.2105
 
 LABEL 'com.github.actions.name'='Lint RPM specs'
 LABEL 'com.github.actions.description'='Lint RPM spec files'
