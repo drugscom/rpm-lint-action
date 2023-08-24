@@ -6,6 +6,7 @@ LABEL 'com.github.actions.description'='Lint RPM spec files'
 RUN yum -y install \
     epel-release-7 \
     rpmlint-1.5 \
+    ca-certificates \
     && yum -y clean all
 
 COPY entrypoint.sh /entrypoint.sh
